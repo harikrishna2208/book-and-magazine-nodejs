@@ -1,0 +1,1122 @@
+{
+	"info": {
+		"_postman_id": "aab98a00-1546-4c04-ab61-6892761145dc",
+		"name": "BookAndMagazine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "read CSV file(Author,Book,Magazine) - magazine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csvFile",
+							"type": "file",
+							"src": "/C:/Users/Harikrishna.m/Downloads/Allfiles/CSV/magazines.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/readCSVDATA?category=magazine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"readCSVDATA"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "magazine",
+							"description": "can give magazine,books or authors as INPIUT\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "read CSV file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "csvFile",
+									"type": "file",
+									"src": "/C:/Users/harik/Desktop/CSV/authors.csv"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/readCSVDATA?category=authors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"readCSVDATA"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "authors"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-wYnr17bgtHvGeteyViybmb5uB8k\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 15:27:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"File uploaded successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "read CSV file(Author,Book,Magazine)- books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csvFile",
+							"type": "file",
+							"src": "/C:/Users/Harikrishna.m/Downloads/Allfiles/CSV/books.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/readCSVDATA?category=books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"readCSVDATA"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "books"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "read CSV file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "csvFile",
+									"type": "file",
+									"src": "/C:/Users/harik/Desktop/CSV/authors.csv"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/readCSVDATA?category=authors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"readCSVDATA"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "authors"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-wYnr17bgtHvGeteyViybmb5uB8k\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 15:27:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"File uploaded successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "read CSV file(Author,Book,Magazine)- Authors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csvFile",
+							"type": "file",
+							"src": "/C:/Users/Harikrishna.m/Downloads/Allfiles/CSV/books.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/readCSVDATA?category=authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"readCSVDATA"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "authors"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "read CSV file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "csvFile",
+									"type": "file",
+									"src": "/C:/Users/harik/Desktop/CSV/authors.csv"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/readCSVDATA?category=authors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"readCSVDATA"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "authors"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-wYnr17bgtHvGeteyViybmb5uB8k\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 15:27:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"File uploaded successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get - All authors Work",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/authorBooksAndMagazine?email=walter@echocat.org",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"authorBooksAndMagazine"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "walter@echocat.org"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get - All authors Work",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/authorBooksAndMagazine?email=walter@echocat.org",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"authorBooksAndMagazine"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "walter@echocat.org"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2350"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"92e-S2aTpP+csCtQtfF88eQ2Q9zvSlA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 07:32:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"fetched data Successfully\",\n    \"data\": {\n        \"authorWorkOnBooks\": [\n            {\n                \"title\": \"Ich helfe dir kochen. Das erfolgreiche Universalkochbuch mit großem Backteil\",\n                \"isbn\": \"5554-5545-4518\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"description\": \"Auf der Suche nach einem Basiskochbuch steht man heutzutage vor einer Fülle von Alternativen. Es fällt schwer, daraus die für sich passende Mixtur aus Grundlagenwerk und Rezeptesammlung zu finden. Man sollte sich darüber im Klaren sein, welchen Schwerpunkt man setzen möchte oder von welchen Koch- und Backkenntnissen man bereits ausgehen kann.\"\n            },\n            {\n                \"title\": \"Genial italienisch\",\n                \"isbn\": \"1024-5245-8584\",\n                \"authors\": [\n                    \"lieblich@echocat.org\",\n                    \"walter@echocat.org\",\n                    \"rabe@echocat.org\"\n                ],\n                \"description\": \"Starkoch Jamie Oliver war mit seinem VW-Bus in Italien unterwegs -- und hat allerlei kulinarische Souvenirs mitgebracht. Es lohnt sich, einen Blick in sein Gepäck zu werfen...\"\n            },\n            {\n                \"title\": \"Schuhbecks Kochschule. Kochen lernen mit Alfons Schuhbeck \",\n                \"isbn\": \"1215-4545-5895\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"description\": \"Aller Anfang ist leicht! Zumindest, wenn man beim Kochenlernen einen Lehrer wie Alfons Schuhbeck zur Seite hat. Mit seiner Hilfe kann auch der ungeschickteste Anfänger beste Noten für seine Gerichte bekommen. Der Trick, den der vielfach ausgezeichnete Meisterkoch dabei anwendet, lautet visualisieren. Die einzelnen Arbeitsschritte werden auf Farbfotos im Format von ca. 3x4 cm abgebildet. Unter diesen stehen kurz und knapp die Angaben zur Zubereitung. So präsentiert Schuhbecks Kochschule alles bequem auf einen Blick. Und der interessierte Kochneuling kann sich auf die Hauptsache konzentrieren – aufs Kochen. Wie die Speise aussehen soll, zeigt jeweils das Farbfoto auf der linken Seite, auf der auch die Zutaten – dank des geschickten Layouts – ebenfalls sehr übersichtlich aufgelistet sind. Außerdem gibt Schuhbeck prägnante Empfehlungen zu Zutaten und Zubereitung.\"\n            }\n        ],\n        \"authorWorkOnMagazine\": [\n            {\n                \"title\": \"Beautiful cooking\",\n                \"isbn\": \"5454-5587-3210\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2011-05-21\"\n            },\n            {\n                \"title\": \"Cooking for gourmets\",\n                \"isbn\": \"2365-5632-7854\",\n                \"authors\": [\n                    \"lieblich@echocat.org\",\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2012-05-01\"\n            },\n            {\n                \"title\": \"The Wine Connoisseurs\",\n                \"isbn\": \"2547-8548-2541\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2011-12-12\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get - All Magazine And Books Sorted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/allMagazineAndBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"allMagazineAndBook"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "walter@echocat.org",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get - All Magazine And Books Sorted",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/allMagazineAndBook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"allMagazineAndBook"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "walter@echocat.org",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4817"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12d1-zSY073rXk4o/rBx/SdCOanrN5zQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 07:32:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"fetched data Successfully\",\n    \"data\": {\n        \"authorWorkOnBooks\": [\n            {\n                \"title\": \"Das große GU-Kochbuch Kochen für Kinder\",\n                \"isbn\": \"2145-8548-3325\",\n                \"authors\": [\n                    \"ferdinand@echocat.org\",\n                    \"lieblich@echocat.org\"\n                ],\n                \"description\": \"Es beginnt mit... den ersten Löffelchen für Mami, Papi und den Rest der Welt. Ja, und dann? Was Hersteller von Babynahrung können, das ist oft im Handumdrehen auch selbst gemacht, vielleicht sogar gesünder, oftmals frischer. Ältere Babys und Schulkinder will das Kochbuch ansprechen und das tut es auf eine verspielte Art angenehm altersgemäß.\"\n            },\n            {\n                \"title\": \"Das Perfekte Dinner. Die besten Rezepte\",\n                \"isbn\": \"2221-5548-8585\",\n                \"authors\": [\n                    \"lieblich@echocat.org\"\n                ],\n                \"description\": \"Sie wollen auch ein perfektes Dinner kreieren? Mit diesem Buch gelingt es Ihnen!\"\n            },\n            {\n                \"title\": \"Das Piratenkochbuch. Ein Spezialitätenkochbuch mit den 150 leckersten Rezepten \",\n                \"isbn\": \"3214-5698-7412\",\n                \"authors\": [\n                    \"rabe@echocat.org\"\n                ],\n                \"description\": \"Das Piraten-Kochbuch beweist, dass die Seeräuberkapitäne zwar gefürchtete Haudegen waren, andererseits aber manches Mal mit gehobenenem Geschmacksempfinden ausgestattet. ... Kurzum, ein ideales Buch, um maritime Events kulinarisch zu umrahmen.\"\n            },\n            {\n                \"title\": \"Genial italienisch\",\n                \"isbn\": \"1024-5245-8584\",\n                \"authors\": [\n                    \"lieblich@echocat.org\",\n                    \"walter@echocat.org\",\n                    \"rabe@echocat.org\"\n                ],\n                \"description\": \"Starkoch Jamie Oliver war mit seinem VW-Bus in Italien unterwegs -- und hat allerlei kulinarische Souvenirs mitgebracht. Es lohnt sich, einen Blick in sein Gepäck zu werfen...\"\n            },\n            {\n                \"title\": \"Ich helfe dir kochen. Das erfolgreiche Universalkochbuch mit großem Backteil\",\n                \"isbn\": \"5554-5545-4518\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"description\": \"Auf der Suche nach einem Basiskochbuch steht man heutzutage vor einer Fülle von Alternativen. Es fällt schwer, daraus die für sich passende Mixtur aus Grundlagenwerk und Rezeptesammlung zu finden. Man sollte sich darüber im Klaren sein, welchen Schwerpunkt man setzen möchte oder von welchen Koch- und Backkenntnissen man bereits ausgehen kann.\"\n            },\n            {\n                \"title\": \"O'Reillys Kochbuch für Geeks\",\n                \"isbn\": \"2215-0012-5487\",\n                \"authors\": [\n                    \"mueller@echocat.org\"\n                ],\n                \"description\": \"Nach landläufiger Meinung leben Geeks von Cola und TK-Pizza, die sie nachts am Rechner geistesabwesend in sich reinschlingen. Soweit das Klischee! Dass aber Kochen viel mit Programmieren zu tun hat, dass es nämlich ähnlich kreativ ist, dass viele Wege zum individuellen Ziel führen und dass manche Rezepte einfach nur abgefahren und -- ja, geekig sind: Das zeigen zwei Köchinnen in diesem Buch.\"\n            },\n            {\n                \"title\": \"Schlank im Schlaf \",\n                \"isbn\": \"4545-8558-3232\",\n                \"authors\": [\n                    \"gustafsson@echocat.org\"\n                ],\n                \"description\": \"Schlank im Schlaf klingt wie ein schöner Traum, aber es ist wirklich möglich. Allerdings nicht nach einer Salamipizza zum Abendbrot. Die Grundlagen dieses neuartigen Konzepts sind eine typgerechte Insulin-Trennkost sowie Essen und Sport im Takt der biologischen Uhr. Wie die Bio-Uhr tickt und was auf dem Speiseplan stehen sollte, hängt vom persönlichen Urtyp ab: Nomade oder Ackerbauer?\"\n            },\n            {\n                \"title\": \"Schuhbecks Kochschule. Kochen lernen mit Alfons Schuhbeck \",\n                \"isbn\": \"1215-4545-5895\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"description\": \"Aller Anfang ist leicht! Zumindest, wenn man beim Kochenlernen einen Lehrer wie Alfons Schuhbeck zur Seite hat. Mit seiner Hilfe kann auch der ungeschickteste Anfänger beste Noten für seine Gerichte bekommen. Der Trick, den der vielfach ausgezeichnete Meisterkoch dabei anwendet, lautet visualisieren. Die einzelnen Arbeitsschritte werden auf Farbfotos im Format von ca. 3x4 cm abgebildet. Unter diesen stehen kurz und knapp die Angaben zur Zubereitung. So präsentiert Schuhbecks Kochschule alles bequem auf einen Blick. Und der interessierte Kochneuling kann sich auf die Hauptsache konzentrieren – aufs Kochen. Wie die Speise aussehen soll, zeigt jeweils das Farbfoto auf der linken Seite, auf der auch die Zutaten – dank des geschickten Layouts – ebenfalls sehr übersichtlich aufgelistet sind. Außerdem gibt Schuhbeck prägnante Empfehlungen zu Zutaten und Zubereitung.\"\n            }\n        ],\n        \"authorWorkOnMagazine\": [\n            {\n                \"title\": \"Beautiful cooking\",\n                \"isbn\": \"5454-5587-3210\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2011-05-21\"\n            },\n            {\n                \"title\": \"Cooking for gourmets\",\n                \"isbn\": \"2365-5632-7854\",\n                \"authors\": [\n                    \"lieblich@echocat.org\",\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2012-05-01\"\n            },\n            {\n                \"title\": \"Gourmet\",\n                \"isbn\": \"2365-8745-7854\",\n                \"authors\": [\n                    \"ferdinand@echocat.org\"\n                ],\n                \"publishedAt\": \"2010-06-14\"\n            },\n            {\n                \"title\": \"My familie and me\",\n                \"isbn\": \"4545-8541-2012\",\n                \"authors\": [\n                    \"mueller@echocat.org\"\n                ],\n                \"publishedAt\": \"2011-07-10\"\n            },\n            {\n                \"title\": \"The Wine Connoisseurs\",\n                \"isbn\": \"2547-8548-2541\",\n                \"authors\": [\n                    \"walter@echocat.org\"\n                ],\n                \"publishedAt\": \"2011-12-12\"\n            },\n            {\n                \"title\": \"Vinum\",\n                \"isbn\": \"1313-4545-8875\",\n                \"authors\": [\n                    \"gustafsson@echocat.org\"\n                ],\n                \"publishedAt\": \"2012-02-23\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PRINT to Console",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/printAllBookAndMagazine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"printAllBookAndMagazine"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "walter@echocat.org",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PRINT to Console",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/printAllBookAndMagazine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"printAllBookAndMagazine"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "walter@echocat.org",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-u0VBveKaUocgIPKEl4OPlWdog4k\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 08:38:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"LOGGED IN CONSOLE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get -Magazine or Book using ISBN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/magazineOrBook?isbn=2365-5632-7854",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"magazineOrBook"
+					],
+					"query": [
+						{
+							"key": "isbn",
+							"value": "2365-5632-7854"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get -Magazine or Book using ISBN Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/magazineOrBook?isbn=2547-8548-2541",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"magazineOrBook"
+							],
+							"query": [
+								{
+									"key": "isbn",
+									"value": "2547-8548-2541"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "264"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"108-IFLK+dqelPRe1LlY9RoP7wwzTC4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 07:35:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"fetched data Successfully\",\n    \"data\": {\n        \"bookDetails\": [],\n        \"magazineDetails\": {\n            \"id\": \"7d28865d-aa1e-429b-ae1c-872dbf7b25b9\",\n            \"title\": \"The Wine Connoisseurs\",\n            \"isbn\": \"2547-8548-2541\",\n            \"authors\": [\n                \"walter@echocat.org\"\n            ],\n            \"publishedAt\": \"2011-12-12\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add New Magazine Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"magazine1\",\r\n        \"isbn\": \"34-234-234234\",\r\n        \"authors\": [\r\n            \"walter@echocat.org\"\r\n        ],\r\n        \"publishedAt\": \"2022.05.22\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/magazine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"magazine"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add New Magazine Details",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"title\": \"magazine1\",\r\n        \"isbn\": \"34-234-234234\",\r\n        \"authors\": [\r\n            \"walter@echocat.org\"\r\n        ],\r\n        \"publishedAt\": \"2022.05.22\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/magazine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"magazine"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-LUCoN34Vxn59pyMf/PXIXcvEPH4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 09:26:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"message\": \"Cannot fetch Data\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add NewBook Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Book-1\",\r\n        \"isbn\": \"34-234-234234\",\r\n        \"authors\": [\r\n            \"walter@echocat.org\"\r\n        ],\r\n        \"description\": \"sample description\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add NewBook Details",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"title\": \"Book-1\",\r\n        \"isbn\": \"34-234-234234\",\r\n        \"authors\": [\r\n            \"walter@echocat.org\"\r\n        ],\r\n        \"description\": \"sample description\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "300"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12c-x3DnIsm/MJ8PQr+qbe5Wyt4q1w4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 09:28:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Data inserted successfully\",\n    \"data\": [\n        {\n            \"id\": \"2f466fc0-abde-40c3-acb8-34b9b70fd42e\",\n            \"title\": \"Book-1\",\n            \"isbn\": \"34-234-234234\",\n            \"authors\": [\n                \"walter@echocat.org\"\n            ],\n            \"description\": \"sample description\",\n            \"createdAt\": \"2022-12-15T09:28:58.759Z\",\n            \"updatedAt\": \"2022-12-15T09:28:58.759Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "export to file in reponse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/exportAll?category=magazine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"exportAll"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "magazine",
+							"description": "pass \"books\" or \"magazine\" here to get csv file."
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "export to file in reponse-magazine",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/exportAll?category=magazine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"exportAll"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "magazine"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/csv; charset=utf-8"
+						},
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=\"data.csv\""
+						},
+						{
+							"key": "Content-Length",
+							"value": "593"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"251-0EoPSbN1xC9NUJJE4VPkZ0/FQxQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 11:46:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"title\",\"isbn\",\"authors\",\"publishedAt\"\r\n\"Beautiful cooking\",\"5454-5587-3210\",\"[\"\"walter@echocat.org\"\"]\",\"2011-05-21\"\r\n\"My familie and me\",\"4545-8541-2012\",\"[\"\"mueller@echocat.org\"\"]\",\"2011-07-10\"\r\n\"Cooking for gourmets\",\"2365-5632-7854\",\"[\"\"lieblich@echocat.org\"\",\"\"walter@echocat.org\"\"]\",\"2012-05-01\"\r\n\"Gourmet\",\"2365-8745-7854\",\"[\"\"ferdinand@echocat.org\"\"]\",\"2010-06-14\"\r\n\"The Wine Connoisseurs\",\"2547-8548-2541\",\"[\"\"walter@echocat.org\"\"]\",\"2011-12-12\"\r\n\"Vinum\",\"1313-4545-8875\",\"[\"\"gustafsson@echocat.org\"\"]\",\"2012-02-23\"\r\n\"magazine1\",\"34-234-234234\",\"[\"\"walter@echocat.org\"\"]\",\"2022-05-22\""
+				},
+				{
+					"name": "export to file in reponse-book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/exportAll?category=books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"exportAll"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "books"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/csv; charset=utf-8"
+						},
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=\"data.csv\""
+						},
+						{
+							"key": "Content-Length",
+							"value": "3833"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef9-flnmTxlJmqno9RZ/Y4TpubwOpNU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 11:46:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"title\",\"isbn\",\"authors\",\"description\"\r\n\"Ich helfe dir kochen. Das erfolgreiche Universalkochbuch mit großem Backteil\",\"5554-5545-4518\",\"[\"\"walter@echocat.org\"\"]\",\"Auf der Suche nach einem Basiskochbuch steht man heutzutage vor einer Fülle von Alternativen. Es fällt schwer, daraus die für sich passende Mixtur aus Grundlagenwerk und Rezeptesammlung zu finden. Man sollte sich darüber im Klaren sein, welchen Schwerpunkt man setzen möchte oder von welchen Koch- und Backkenntnissen man bereits ausgehen kann.\"\r\n\"Das große GU-Kochbuch Kochen für Kinder\",\"2145-8548-3325\",\"[\"\"ferdinand@echocat.org\"\",\"\"lieblich@echocat.org\"\"]\",\"Es beginnt mit... den ersten Löffelchen für Mami, Papi und den Rest der Welt. Ja, und dann? Was Hersteller von Babynahrung können, das ist oft im Handumdrehen auch selbst gemacht, vielleicht sogar gesünder, oftmals frischer. Ältere Babys und Schulkinder will das Kochbuch ansprechen und das tut es auf eine verspielte Art angenehm altersgemäß.\"\r\n\"Schlank im Schlaf \",\"4545-8558-3232\",\"[\"\"gustafsson@echocat.org\"\"]\",\"Schlank im Schlaf klingt wie ein schöner Traum, aber es ist wirklich möglich. Allerdings nicht nach einer Salamipizza zum Abendbrot. Die Grundlagen dieses neuartigen Konzepts sind eine typgerechte Insulin-Trennkost sowie Essen und Sport im Takt der biologischen Uhr. Wie die Bio-Uhr tickt und was auf dem Speiseplan stehen sollte, hängt vom persönlichen Urtyp ab: Nomade oder Ackerbauer?\"\r\n\"Das Perfekte Dinner. Die besten Rezepte\",\"2221-5548-8585\",\"[\"\"lieblich@echocat.org\"\"]\",\"Sie wollen auch ein perfektes Dinner kreieren? Mit diesem Buch gelingt es Ihnen!\"\r\n\"Das Piratenkochbuch. Ein Spezialitätenkochbuch mit den 150 leckersten Rezepten \",\"3214-5698-7412\",\"[\"\"rabe@echocat.org\"\"]\",\"Das Piraten-Kochbuch beweist, dass die Seeräuberkapitäne zwar gefürchtete Haudegen waren, andererseits aber manches Mal mit gehobenenem Geschmacksempfinden ausgestattet. ... Kurzum, ein ideales Buch, um maritime Events kulinarisch zu umrahmen.\"\r\n\"Genial italienisch\",\"1024-5245-8584\",\"[\"\"lieblich@echocat.org\"\",\"\"walter@echocat.org\"\",\"\"rabe@echocat.org\"\"]\",\"Starkoch Jamie Oliver war mit seinem VW-Bus in Italien unterwegs -- und hat allerlei kulinarische Souvenirs mitgebracht. Es lohnt sich, einen Blick in sein Gepäck zu werfen...\"\r\n\"O'Reillys Kochbuch für Geeks\",\"2215-0012-5487\",\"[\"\"mueller@echocat.org\"\"]\",\"Nach landläufiger Meinung leben Geeks von Cola und TK-Pizza, die sie nachts am Rechner geistesabwesend in sich reinschlingen. Soweit das Klischee! Dass aber Kochen viel mit Programmieren zu tun hat, dass es nämlich ähnlich kreativ ist, dass viele Wege zum individuellen Ziel führen und dass manche Rezepte einfach nur abgefahren und -- ja, geekig sind: Das zeigen zwei Köchinnen in diesem Buch.\"\r\n\"Schuhbecks Kochschule. Kochen lernen mit Alfons Schuhbeck \",\"1215-4545-5895\",\"[\"\"walter@echocat.org\"\"]\",\"Aller Anfang ist leicht! Zumindest, wenn man beim Kochenlernen einen Lehrer wie Alfons Schuhbeck zur Seite hat. Mit seiner Hilfe kann auch der ungeschickteste Anfänger beste Noten für seine Gerichte bekommen. Der Trick, den der vielfach ausgezeichnete Meisterkoch dabei anwendet, lautet visualisieren. Die einzelnen Arbeitsschritte werden auf Farbfotos im Format von ca. 3x4 cm abgebildet. Unter diesen stehen kurz und knapp die Angaben zur Zubereitung. So präsentiert Schuhbecks Kochschule alles bequem auf einen Blick. Und der interessierte Kochneuling kann sich auf die Hauptsache konzentrieren – aufs Kochen. Wie die Speise aussehen soll, zeigt jeweils das Farbfoto auf der linken Seite, auf der auch die Zutaten – dank des geschickten Layouts – ebenfalls sehr übersichtlich aufgelistet sind. Außerdem gibt Schuhbeck prägnante Empfehlungen zu Zutaten und Zubereitung.\"\r\n\"Book-1\",\"34-234-234234\",\"[\"\"walter@echocat.org\"\"]\",\"sample description\""
+				}
+			]
+		}
+	]
+}
